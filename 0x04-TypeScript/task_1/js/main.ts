@@ -17,3 +17,18 @@ const teacher3: Teacher = {
 };
 
 console.log(teacher3);
+
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+const director1: Directors = {
+  firstName: "Jane",
+  fullTimeEmployee: true,
+  lastName: "Smith",
+  location: "New York",
+  numberOfReports: 10,
+  yearsOfExperience: 15,
+};
+
+console.log(director1);
