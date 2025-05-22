@@ -33,3 +33,15 @@ class Teacher implements TeacherInterface {
     return "Getting to work";
   }
 }
+
+const createEmployee = (salary: number | string): Director | Teacher => {
+  if (typeof salary === "number" && salary < 500) {
+    return new Teacher();
+  } else {
+    return new Director();
+  }
+};
+
+console.log(createEmployee(200));
+console.log(createEmployee(1000));
+console.log(createEmployee("$500"));
