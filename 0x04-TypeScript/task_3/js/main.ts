@@ -18,3 +18,23 @@ export function updateRow(rowId: RowID, row: RowElement): RowID {
 
   return rowId;
 }
+
+const row: RowElement = {
+  firstName: "Guillaume",
+  lastName: "Salva",
+};
+
+const newRowID: RowID = insertRow(row);
+const updatedRow: RowElement = {
+  ...row,
+  age: 23,
+};
+
+const obj = {
+  firstName: "Guillaume",
+  lastName: "Salva",
+};
+
+CRUD.insertRow(obj);
+CRUD.updateRow(newRowID, updatedRow);
+CRUD.deleteRow(500);
