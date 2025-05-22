@@ -56,3 +56,16 @@ const isDirector = (employee: Director | Teacher) => {
 
 console.log(isDirector(createEmployee(200)));
 console.log(isDirector(createEmployee(1000)));
+
+type Subjects = "Math" | "History";
+
+const teachClass = (todayClass: Subjects) => {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else if (todayClass === "History") {
+    return "Teaching History";
+  }
+};
+
+console.log(teachClass("Math"));
+console.log(teachClass("History"));
