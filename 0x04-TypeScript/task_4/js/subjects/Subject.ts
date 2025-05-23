@@ -7,7 +7,7 @@ namespace Subjects {
       this.teacher = teacher;
     }
     setTeacher(teacher: Teacher): void {
-      this.teacher = teacher
+      this.teacher = teacher;
     }
   }
 }
